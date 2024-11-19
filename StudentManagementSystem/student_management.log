@@ -149,40 +149,40 @@ WARNING 2024-11-19 05:44:30,308 log Bad Request: /auth/users/
 WARNING 2024-11-19 05:44:30,310 basehttp "POST /auth/users/ HTTP/1.1" 400 10782
 ERROR 2024-11-19 05:44:52,257 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 134, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 134, in perform_create
     user = serializer.save(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 208, in save
     self.instance = self.create(validated_data)
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/serializers.py", line 40, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/serializers.py", line 40, in create
     user = self.perform_create(validated_data)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/serializers.py", line 48, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/serializers.py", line 48, in perform_create
     user = User.objects.create_user(**validated_data)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: UserManager.create_user() missing 1 required positional argument: 'username'
@@ -196,41 +196,41 @@ WARNING 2024-11-19 05:49:08,515 log Unauthorized: /auth/users/
 WARNING 2024-11-19 05:49:08,515 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 05:50:27,228 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 144, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 144, in perform_create
     settings.EMAIL.confirmation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
     new_conn_created = self.open()
                        ^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 86, in open
     self.connection = self.connection_class(
                       ^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 255, in __init__
@@ -317,46 +317,46 @@ WARNING 2024-11-19 06:01:49,372 log Unauthorized: /auth/users/
 WARNING 2024-11-19 06:01:49,372 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 06:02:31,134 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 74, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 74, in send
     self.render()
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 65, in render
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 65, in render
     context = make_context(self.get_context_data(), request=self.request)
                            ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 122, in get_context_data
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 122, in get_context_data
     context["url"] = settings.ACTIVATION_URL.format(**context)
                      ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/utils/functional.py", line 253, in inner
     return func(_wrapped, *args)
            ^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'Settings' object has no attribute 'ACTIVATION_URL'
 ERROR 2024-11-19 06:02:31,136 basehttp "POST /auth/users/ HTTP/1.1" 500 116714
-INFO 2024-11-19 06:04:30,481 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 06:04:30,481 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 06:04:30,869 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 06:04:55,287 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 06:04:56,219 log Not Found: /
@@ -403,41 +403,41 @@ WARNING 2024-11-19 06:08:30,624 log Unauthorized: /auth/users/
 WARNING 2024-11-19 06:08:30,625 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 06:09:19,333 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
     new_conn_created = self.open()
                        ^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 93, in open
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 93, in open
     self.connection.starttls(context=self.ssl_context)
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 779, in starttls
     self.sock = context.wrap_socket(self.sock,
@@ -451,7 +451,7 @@ Traceback (most recent call last):
     self._sslobj.do_handshake()
 ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)
 ERROR 2024-11-19 06:09:19,334 basehttp "POST /auth/users/ HTTP/1.1" 500 135964
-INFO 2024-11-19 06:13:59,088 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 06:13:59,088 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 06:14:24,500 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 06:14:25,524 log Not Found: /
 WARNING 2024-11-19 06:14:25,524 basehttp "GET / HTTP/1.1" 404 2625
@@ -478,41 +478,41 @@ WARNING 2024-11-19 06:14:50,898 log Unauthorized: /auth/users/
 WARNING 2024-11-19 06:14:50,898 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 06:15:25,045 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
     new_conn_created = self.open()
                        ^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 93, in open
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 93, in open
     self.connection.starttls(context=self.ssl_context)
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 779, in starttls
     self.sock = context.wrap_socket(self.sock,
@@ -552,47 +552,47 @@ WARNING 2024-11-19 06:23:04,452 log Unauthorized: /auth/users/
 WARNING 2024-11-19 06:23:04,452 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 06:23:34,834 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 258, in get_connection
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 258, in get_connection
     self.connection = get_connection(fail_silently=fail_silently)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/__init__.py", line 51, in get_connection
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/__init__.py", line 51, in get_connection
     klass = import_string(backend or settings.EMAIL_BACKEND)
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/utils/module_loading.py", line 30, in import_string
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/utils/module_loading.py", line 30, in import_string
     return cached_import(module_path, class_name)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/utils/module_loading.py", line 15, in cached_import
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/utils/module_loading.py", line 15, in cached_import
     module = import_module(module_path)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
@@ -607,7 +607,7 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
 ModuleNotFoundError: No module named 'StudentManagementSystem.StudentManagementSystem'
 ERROR 2024-11-19 06:23:34,835 basehttp "POST /auth/users/ HTTP/1.1" 500 143576
-INFO 2024-11-19 06:24:07,816 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 06:24:07,816 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 06:24:08,215 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 06:24:12,053 log Not Found: /about/
 WARNING 2024-11-19 06:24:12,053 basehttp "GET /about/ HTTP/1.1" 404 2661
@@ -627,41 +627,41 @@ WARNING 2024-11-19 06:24:27,978 log Unauthorized: /auth/users/
 WARNING 2024-11-19 06:24:27,978 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 06:25:01,022 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
     new_conn_created = self.open()
                        ^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 93, in open
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 93, in open
     self.connection.starttls(context=self.ssl_context)
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 779, in starttls
     self.sock = context.wrap_socket(self.sock,
@@ -687,7 +687,7 @@ WARNING 2024-11-19 06:52:35,648 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 WARNING 2024-11-19 06:53:06,436 log Bad Request: /auth/users/
 WARNING 2024-11-19 06:53:06,438 basehttp "POST /auth/users/ HTTP/1.1" 400 11216
 INFO 2024-11-19 06:53:34,845 basehttp "POST /auth/users/ HTTP/1.1" 201 10878
-INFO 2024-11-19 06:55:24,162 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 06:55:24,162 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 06:55:24,537 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 06:55:26,173 log Not Found: /
 WARNING 2024-11-19 06:55:26,174 basehttp "GET / HTTP/1.1" 404 2625
@@ -709,56 +709,56 @@ WARNING 2024-11-19 06:59:03,799 log Unauthorized: /auth/users/
 WARNING 2024-11-19 06:59:03,799 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 06:59:37,729 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 20, in __init__
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 20, in __init__
     os.makedirs(self.file_path, exist_ok=True)
   File "<frozen os>", line 225, in makedirs
-FileExistsError: [Errno 17] File exists: '/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/email.txt'
+FileExistsError: [Errno 17] File exists: '/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/email.txt'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 258, in get_connection
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 258, in get_connection
     self.connection = get_connection(fail_silently=fail_silently)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/__init__.py", line 52, in get_connection
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/__init__.py", line 52, in get_connection
     return klass(fail_silently=fail_silently, **kwds)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 22, in __init__
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 22, in __init__
     raise ImproperlyConfigured(
-django.core.exceptions.ImproperlyConfigured: Path for saving email messages exists, but is not a directory: /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/email.txt
+django.core.exceptions.ImproperlyConfigured: Path for saving email messages exists, but is not a directory: /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/email.txt
 ERROR 2024-11-19 06:59:37,730 basehttp "POST /auth/users/ HTTP/1.1" 500 129231
-INFO 2024-11-19 07:00:31,481 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 07:00:31,481 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 07:00:31,882 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:00:35,602 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 07:00:41,046 log Not Found: /about/
@@ -767,56 +767,56 @@ WARNING 2024-11-19 07:00:42,537 log Unauthorized: /auth/users/
 WARNING 2024-11-19 07:00:42,537 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 ERROR 2024-11-19 07:01:10,095 log Internal Server Error: /auth/users/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 20, in __init__
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 20, in __init__
     os.makedirs(self.file_path, exist_ok=True)
   File "<frozen os>", line 225, in makedirs
-FileExistsError: [Errno 17] File exists: '/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/email.txt'
+FileExistsError: [Errno 17] File exists: '/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/email.txt'
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
     response = handler(request, *args, **kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
     self.perform_create(serializer)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/views.py", line 142, in perform_create
     settings.EMAIL.activation(self.request, context).send(to)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/djoser/email.py", line 82, in send
     super().send(fail_silently=fail_silently)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
     return self.get_connection(fail_silently).send_messages([self])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 258, in get_connection
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/message.py", line 258, in get_connection
     self.connection = get_connection(fail_silently=fail_silently)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/__init__.py", line 52, in get_connection
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/__init__.py", line 52, in get_connection
     return klass(fail_silently=fail_silently, **kwds)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 22, in __init__
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/mail/backends/filebased.py", line 22, in __init__
     raise ImproperlyConfigured(
-django.core.exceptions.ImproperlyConfigured: Path for saving email messages exists, but is not a directory: /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/email.txt
+django.core.exceptions.ImproperlyConfigured: Path for saving email messages exists, but is not a directory: /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/email.txt
 ERROR 2024-11-19 07:01:10,096 basehttp "POST /auth/users/ HTTP/1.1" 500 129139
-INFO 2024-11-19 07:03:31,376 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 07:03:31,376 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 07:03:31,829 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:03:37,887 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 07:03:38,859 log Not Found: /
@@ -850,7 +850,7 @@ WARNING 2024-11-19 07:14:36,628 log Not Found: /
 WARNING 2024-11-19 07:14:36,629 basehttp "GET / HTTP/1.1" 404 2625
 WARNING 2024-11-19 07:14:38,443 log Unauthorized: /auth/users/me/
 WARNING 2024-11-19 07:14:38,443 basehttp "GET /auth/users/me/ HTTP/1.1" 401 5246
-INFO 2024-11-19 07:23:27,096 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/users/serializers.py changed, reloading.
+INFO 2024-11-19 07:23:27,096 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/users/serializers.py changed, reloading.
 INFO 2024-11-19 07:23:27,541 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:23:40,952 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:24:09,982 autoreload Watching for file changes with StatReloader
@@ -892,66 +892,66 @@ WARNING 2024-11-19 07:30:56,313 basehttp "GET /api/countries/3/cities/1/hotels/ 
 INFO 2024-11-19 07:31:00,930 basehttp "GET /api/courses HTTP/1.1" 301 0
 ERROR 2024-11-19 07:31:00,966 log Internal Server Error: /api/courses/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
     self.initial(request, *args, **kwargs)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
     self.check_permissions(request)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 332, in check_permissions
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 332, in check_permissions
     if not permission.has_permission(request, self):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/users/permissions.py", line 21, in has_permission
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/users/permissions.py", line 21, in has_permission
     return request.user.role in ['Teacher', 'Admin']
            ^^^^^^^^^^^^^^^^^
 AttributeError: 'AnonymousUser' object has no attribute 'role'
 ERROR 2024-11-19 07:31:00,968 basehttp "GET /api/courses/ HTTP/1.1" 500 99394
 ERROR 2024-11-19 07:31:13,632 log Internal Server Error: /api/courses/
 Traceback (most recent call last):
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
     return view_func(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
     return self.dispatch(request, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
     response = self.handle_exception(exc)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
     raise exc
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
     self.initial(request, *args, **kwargs)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
     self.check_permissions(request)
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 332, in check_permissions
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/venv/lib/python3.12/site-packages/rest_framework/views.py", line 332, in check_permissions
     if not permission.has_permission(request, self):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/users/permissions.py", line 21, in has_permission
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/users/permissions.py", line 21, in has_permission
     return request.user.role in ['Teacher', 'Admin']
            ^^^^^^^^^^^^^^^^^
 AttributeError: 'AnonymousUser' object has no attribute 'role'
@@ -995,7 +995,7 @@ WARNING 2024-11-19 07:35:26,039 log Unauthorized: /auth/users/
 WARNING 2024-11-19 07:35:26,039 basehttp "OPTIONS /auth/users/ HTTP/1.1" 401 9596
 WARNING 2024-11-19 07:35:26,335 log Unauthorized: /auth/users/
 WARNING 2024-11-19 07:35:26,336 basehttp "OPTIONS /auth/users/ HTTP/1.1" 401 9596
-INFO 2024-11-19 07:38:20,293 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/users/serializers.py changed, reloading.
+INFO 2024-11-19 07:38:20,293 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/users/serializers.py changed, reloading.
 INFO 2024-11-19 07:38:20,702 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:38:34,294 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:42:45,733 autoreload Watching for file changes with StatReloader
@@ -1027,7 +1027,7 @@ WARNING 2024-11-19 07:44:35,258 log Unauthorized: /auth/users/
 WARNING 2024-11-19 07:44:35,260 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
 WARNING 2024-11-19 07:45:42,246 log Not Found: /
 WARNING 2024-11-19 07:45:42,247 basehttp "GET / HTTP/1.1" 404 2625
-INFO 2024-11-19 07:45:42,399 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
+INFO 2024-11-19 07:45:42,399 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/settings.py changed, reloading.
 INFO 2024-11-19 07:46:56,923 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:48:44,792 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:49:02,908 autoreload Watching for file changes with StatReloader
@@ -1048,7 +1048,7 @@ WARNING 2024-11-19 07:57:40,719 log Method Not Allowed: /auth/jwt/create/
 WARNING 2024-11-19 07:57:40,720 basehttp "GET /auth/jwt/create/ HTTP/1.1" 405 7728
 WARNING 2024-11-19 07:57:44,017 log Unauthorized: /auth/users/
 WARNING 2024-11-19 07:57:44,018 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
-INFO 2024-11-19 07:59:24,113 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/StudentManagementSystem/urls.py changed, reloading.
+INFO 2024-11-19 07:59:24,113 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/StudentManagementSystem/urls.py changed, reloading.
 INFO 2024-11-19 07:59:24,171 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 07:59:24,383 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 07:59:26,652 log Not Found: /
@@ -1085,7 +1085,7 @@ WARNING 2024-11-19 08:05:23,207 basehttp "GET / HTTP/1.1" 404 2777
 WARNING 2024-11-19 08:05:34,792 log Unauthorized: /register/users/
 WARNING 2024-11-19 08:05:34,793 basehttp "GET /register/users/ HTTP/1.1" 401 3783
 INFO 2024-11-19 08:06:17,033 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 08:06:40,780 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/users/urls.py changed, reloading.
+INFO 2024-11-19 08:06:40,780 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/users/urls.py changed, reloading.
 INFO 2024-11-19 08:06:41,021 autoreload Watching for file changes with StatReloader
 WARNING 2024-11-19 08:06:50,835 log Unauthorized: /auth/users/
 WARNING 2024-11-19 08:06:50,836 basehttp "GET /auth/users/ HTTP/1.1" 401 9592
@@ -1299,21 +1299,21 @@ INFO 2024-11-19 13:50:51,352 basehttp "GET /apiCourses/ HTTP/1.1" 200 55
 INFO 2024-11-19 13:50:59,944 basehttp "GET /apiCourses/courses HTTP/1.1" 301 0
 INFO 2024-11-19 13:50:59,947 basehttp "GET /apiCourses/courses/ HTTP/1.1" 200 126
 INFO 2024-11-19 18:11:54,041 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:13:41,139 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:13:41,139 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:13:41,518 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:13:50,806 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:13:50,806 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:13:51,060 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:13:57,347 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:13:57,347 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:13:57,610 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:14:04,813 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:14:04,813 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:14:05,058 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:14:08,208 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:14:08,208 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:14:08,462 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:14:33,990 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:14:33,990 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:14:34,225 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:14:42,478 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/students/views.py changed, reloading.
+INFO 2024-11-19 18:14:42,478 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/students/views.py changed, reloading.
 INFO 2024-11-19 18:14:42,733 autoreload Watching for file changes with StatReloader
-INFO 2024-11-19 18:16:28,577 autoreload /Users/yermakhankasymzhomart/Desktop/Django/MiniProject/StudentManagementSystem/courses/views.py changed, reloading.
+INFO 2024-11-19 18:16:28,577 autoreload /Users/nurasylnurtaza/Desktop/mini_project_2/StudentManagementSystem/courses/views.py changed, reloading.
 INFO 2024-11-19 18:16:28,830 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 18:18:17,234 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 18:21:04,338 autoreload Watching for file changes with StatReloader

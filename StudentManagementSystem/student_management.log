@@ -1335,3 +1335,415 @@ INFO 2024-11-19 22:41:55,154 basehttp "GET /static/admin/css/responsive.css HTTP
 INFO 2024-11-19 22:41:55,158 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
 INFO 2024-11-19 22:43:46,577 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 22:48:04,836 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:07:37,428 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 23:07:39,078 log Not Found: /
+WARNING 2024-11-19 23:07:39,078 basehttp "GET / HTTP/1.1" 404 3639
+INFO 2024-11-19 23:08:03,765 basehttp "GET /swagger HTTP/1.1" 301 0
+INFO 2024-11-19 23:08:03,793 basehttp "GET /swagger/ HTTP/1.1" 200 2232
+INFO 2024-11-19 23:08:03,834 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2024-11-19 23:08:03,838 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2024-11-19 23:08:03,841 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2024-11-19 23:08:03,842 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2024-11-19 23:08:03,846 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2024-11-19 23:08:03,849 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2024-11-19 23:08:03,851 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2024-11-19 23:08:03,975 basehttp "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+ERROR 2024-11-19 23:08:03,997 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 33, in get_operation
+    query = self.get_query_parameters()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 293, in get_query_parameters
+    natural_parameters = self.get_filter_parameters() + self.get_pagination_parameters()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 409, in get_filter_parameters
+    fields += self.probe_inspectors(self.filter_inspectors, 'get_filter_parameters', filter_backend()) or []
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/query.py", line 42, in get_filter_parameters
+    return list(map(self.param_to_schema, filter_backend.get_schema_operation_parameters(self.view)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 146, in get_schema_operation_parameters
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 51, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 78, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 367, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: teacher, category
+ERROR 2024-11-19 23:08:03,998 basehttp "GET /swagger/?format=openapi HTTP/1.1" 500 170898
+ERROR 2024-11-19 23:08:10,373 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 33, in get_operation
+    query = self.get_query_parameters()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 293, in get_query_parameters
+    natural_parameters = self.get_filter_parameters() + self.get_pagination_parameters()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 409, in get_filter_parameters
+    fields += self.probe_inspectors(self.filter_inspectors, 'get_filter_parameters', filter_backend()) or []
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/query.py", line 42, in get_filter_parameters
+    return list(map(self.param_to_schema, filter_backend.get_schema_operation_parameters(self.view)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 146, in get_schema_operation_parameters
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 51, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 78, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 367, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: teacher, category
+ERROR 2024-11-19 23:08:10,375 basehttp "GET /swagger/?format=openapi HTTP/1.1" 500 170898
+ERROR 2024-11-19 23:08:11,329 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 33, in get_operation
+    query = self.get_query_parameters()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 293, in get_query_parameters
+    natural_parameters = self.get_filter_parameters() + self.get_pagination_parameters()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 409, in get_filter_parameters
+    fields += self.probe_inspectors(self.filter_inspectors, 'get_filter_parameters', filter_backend()) or []
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/query.py", line 42, in get_filter_parameters
+    return list(map(self.param_to_schema, filter_backend.get_schema_operation_parameters(self.view)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 146, in get_schema_operation_parameters
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 51, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 78, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 367, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: teacher, category
+ERROR 2024-11-19 23:08:11,330 basehttp "GET /swagger/?format=openapi HTTP/1.1" 500 170898
+INFO 2024-11-19 23:08:23,719 basehttp "GET /redoc HTTP/1.1" 301 0
+INFO 2024-11-19 23:08:23,725 basehttp "GET /redoc/ HTTP/1.1" 200 946
+INFO 2024-11-19 23:08:23,754 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 23:08:23,755 basehttp "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 200 2566
+INFO 2024-11-19 23:08:23,755 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-19 23:08:23,762 basehttp "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 200 1042511
+INFO 2024-11-19 23:08:23,856 basehttp "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 200 4969
+ERROR 2024-11-19 23:08:23,868 log Internal Server Error: /redoc/
+Traceback (most recent call last):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 33, in get_operation
+    query = self.get_query_parameters()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 293, in get_query_parameters
+    natural_parameters = self.get_filter_parameters() + self.get_pagination_parameters()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 409, in get_filter_parameters
+    fields += self.probe_inspectors(self.filter_inspectors, 'get_filter_parameters', filter_backend()) or []
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/query.py", line 42, in get_filter_parameters
+    return list(map(self.param_to_schema, filter_backend.get_schema_operation_parameters(self.view)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 146, in get_schema_operation_parameters
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 51, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 78, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 367, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: teacher, category
+ERROR 2024-11-19 23:08:23,869 basehttp "GET /redoc/?format=openapi HTTP/1.1" 500 170695
+INFO 2024-11-19 23:09:58,966 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 23:10:00,541 log Not Found: /
+WARNING 2024-11-19 23:10:00,542 basehttp "GET / HTTP/1.1" 404 3639
+INFO 2024-11-19 23:10:08,403 basehttp "GET /swagger/ HTTP/1.1" 200 2232
+INFO 2024-11-19 23:10:08,455 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:08,461 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:08,461 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:08,462 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:08,464 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:08,466 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:08,466 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+ERROR 2024-11-19 23:10:08,615 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 33, in get_operation
+    query = self.get_query_parameters()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 293, in get_query_parameters
+    natural_parameters = self.get_filter_parameters() + self.get_pagination_parameters()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 409, in get_filter_parameters
+    fields += self.probe_inspectors(self.filter_inspectors, 'get_filter_parameters', filter_backend()) or []
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/query.py", line 42, in get_filter_parameters
+    return list(map(self.param_to_schema, filter_backend.get_schema_operation_parameters(self.view)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 146, in get_schema_operation_parameters
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 51, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 78, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 367, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: teacher, category
+ERROR 2024-11-19 23:10:08,617 basehttp "GET /swagger/?format=openapi HTTP/1.1" 500 171242
+INFO 2024-11-19 23:10:15,102 basehttp "GET /redoc/ HTTP/1.1" 200 946
+INFO 2024-11-19 23:10:15,120 basehttp "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 304 0
+INFO 2024-11-19 23:10:15,121 basehttp "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 304 0
+ERROR 2024-11-19 23:10:15,204 log Internal Server Error: /redoc/
+Traceback (most recent call last):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/views.py", line 96, in get
+    schema = generator.get_schema(request, self.public)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 276, in get_schema
+    paths, prefix = self.get_paths(endpoints, components, request, public)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 482, in get_paths
+    operation = self.get_operation(view, path, prefix, method, components, request)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/generators.py", line 524, in get_operation
+    operation = view_inspector.get_operation(operation_keys)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 33, in get_operation
+    query = self.get_query_parameters()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/view.py", line 293, in get_query_parameters
+    natural_parameters = self.get_filter_parameters() + self.get_pagination_parameters()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 409, in get_filter_parameters
+    fields += self.probe_inspectors(self.filter_inspectors, 'get_filter_parameters', filter_backend()) or []
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/base.py", line 110, in probe_inspectors
+    result = method(obj, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/drf_yasg/inspectors/query.py", line 42, in get_filter_parameters
+    return list(map(self.param_to_schema, filter_backend.get_schema_operation_parameters(self.view)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 146, in get_schema_operation_parameters
+    filterset_class = self.get_filterset_class(view, queryset)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/rest_framework/backends.py", line 51, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 78, in __new__
+    new_class.base_filters = new_class.get_filters()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurasylnurtaza/Desktop/mini_project_2/.venv/lib/python3.11/site-packages/django_filters/filterset.py", line 367, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: teacher, category
+ERROR 2024-11-19 23:10:15,205 basehttp "GET /redoc/?format=openapi HTTP/1.1" 500 171039

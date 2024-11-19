@@ -20,4 +20,4 @@ class CourseViewSet(ModelViewSet):
             return [IsTeacherOrAdmin()]
         elif self.action == 'list':
             return [IsAdmin()]
-        return [IsAdmin()]  # По умолчанию доступ для администратора
+        return [IsAdmin()]
